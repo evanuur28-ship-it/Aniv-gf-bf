@@ -15,7 +15,6 @@
 <script>
 const Taehyung = "Sayang";
 document.getElementById("Taehyung").textContent = "Taehyung";
-
 const q=new URLSearchParams(location.search);const n=q.get("name");if(n)document.getElementById("partner").textContent=n;const d=q.get("date");if(d)document.getElementById("date").textContent=d;const p=q.get("place");if(p)document.getElementById("place").textContent=p;
 function show(id){document.querySelectorAll(".page").forEach(x=>x.classList.add("hidden"));document.getElementById(id).classList.remove("hidden");scrollTo({top:0,behavior:"smooth"})}
 function start(){show("story");document.getElementById("music").play().catch(()=>{})}
